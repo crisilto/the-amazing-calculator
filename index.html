@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>The Amazing Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Let's calculate!</h1>
+    </header>
+    <main class="calculator-container">
+        <!-- Grupo 1: Labels con inputs -->
+        <div class="input-group">
+            <label for="num1">Number 1: </label>
+            <input type="number" id="num1-el">
+            <label for="num2">Number 2: </label>
+            <input type="number" id="num2-el">
+        </div>
+
+        <!-- Grupo 2: Botones -->
+        <div class="button-group">
+            <button id="add-btn" class="button" onclick="add()">Add</button>
+            <button id="sbt-btn" class="button" onclick="subtract()">Subtract</button>
+            <button id="dvd-btn" class="button" onclick="divide()">Divide</button>
+            <button id="mlt-btn" class="button" onclick="multiply()">Multiply</button>
+        </div>
+
+        <!-- Resultado -->
+        <div class="result">
+            <span id="total-el">Total: </span>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2C7293;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/background%2C-zoom-background-design-template-d0b25c9820172bf77229af455ac429ec_screen.jpg?ts=1610962817");
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.352);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group label,
+.input-group input {
+    font-size: 30px;
+    margin: 5px 0;
+    padding: 5px 40px 5px 40px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #2C7293;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f3f7fe;
+    color: #2C7293;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #2c729376;
+    box-shadow: 0 0 0 5px rgba(86, 177, 220, 0.61);
+    color: #fff;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (orientation: landscape) {
+    .calculator-container{
+        display: grid;
+        grid-template-columns: 70% 30% auto;
+    }
+    div > button{
+        width: 100%;
+        margin-top: 10px;
+        height: 40px;
+        align-content: center;
+    }
+    .button-group{
+        padding-top: 30px;
+        width: 100%;
+        align-items: center;
+    }
+}
